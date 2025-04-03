@@ -8,7 +8,7 @@ function Submit() {
     let verPassword = "password";
 
     if(username == verUsername && password == verPassword){
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     }else{
         message.textContent = "Invalid username or password. Please wait 10 seconds to attempt again";
         localStorage.setItem("cooldown", Date.now() + 10000);
